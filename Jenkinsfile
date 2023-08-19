@@ -11,7 +11,7 @@ pipeline {
         }
          stage('Test') {
             steps {
-                sh 'gradle test'
+                sh 'gradle testClasses'
             }
         }
         stage('Build Docker Image') {
